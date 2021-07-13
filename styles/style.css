@@ -5,3 +5,36 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* main banner */
+.main-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2D25A0;
+    padding: 153px 140px 86px 156px;
+}
+.banner-destination hgroup{
+    margin-bottom: 27px;
+}
+.banner-destination h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 80px;
+}
+.boxed-btn{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    background: #E02C6D;
+}
+.boxed-btn span{
+    margin-left: 4px;
+}
+.banner-img img{
+    width: 556.01px;
+}
