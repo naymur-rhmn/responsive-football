@@ -15,6 +15,20 @@ body{
 }
 
 /*======================
+animation
+========================*/
+@keyframes move {
+    from{
+        left: 0;
+
+    }
+    to{
+        left: 5px;
+        color: teal;
+    }
+}
+
+/*======================
 main banner 
 ========================*/
 .main-banner{
@@ -43,7 +57,18 @@ main banner
     background: #E02C6D;
 }
 .boxed-btn span{
+    position: relative;
+    animation: move .5s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
     margin-left: 4px;
+}
+.boxed-btn:hover{
+    color: teal;
+    background: whitesmoke;
+    transition: ease .6s;
+}
+.boxed-btn:hover span{
+    left: 3px;
 }
 .banner-img img{
     width: 556.01px;
@@ -102,4 +127,50 @@ Highlight section
 }
 .highlight-img img{
     width: 100%;
+}
+
+/*======================
+Footer area
+========================*/
+footer{
+    text-align: center;
+}
+.footer-logo{
+    width: 484px;
+    margin: 0 auto;
+}
+.social-icon{
+    margin: 20px 0;
+}
+/* footer .social-icon a{
+    text-decoration: none;
+    display: inline-block;
+}
+.social-icon a i.fab{
+    font-size: 18px;
+    color: #969BAB;
+    background-color: #E7E7E8;
+    padding: 10px;
+    margin: 0 7px;
+    border-radius: 50%;
+} */
+.social-icon a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #969BAB;
+    background-color: #E7E7E8;
+    margin: 0 7px;
+    height: 32px;
+    width: 32px;
+    line-height: 33px;
+    border-radius: 50%;
+}
+.social-icon a:hover{
+    color: #10437A;
+    transition: .3s;
+}
+.copyright{
+    color: #000000;
+    font-size: 18px;
 }
