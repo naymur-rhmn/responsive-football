@@ -13,6 +13,9 @@ base styles
 body{
     font-family: 'Poppins', sans-serif;
 }
+hr{
+    border: 1px solid lightgrey;
+}
 
 /*======================
 animation
@@ -148,7 +151,7 @@ Group area
 }
 .single-group-box {
     padding: 40px 20px;
-    box-shadow: 0 10px 30px rgb(44 62 80 / 50%);
+    box-shadow: 0px 0px 10px lightgrey;
 }
 .group-no {
     margin-bottom: 22px;
@@ -316,6 +319,64 @@ Responsive styles
 }
 
 /* Tablet device styles */
-@media screen and (main-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .main-banner{
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    .banner-content h1 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .banner-img img {
+        width: 100%;
+    }
     
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 27px;
+        padding: 70px 90px 85px 90px;
+    }
+    .highlights {
+        padding: 0 90px 30px;
+    }
+    .highlight-content h2 {
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 8px;
+    }
+    .highlight-content h2:nth-child(1){
+        margin-bottom: 0;
+    }
+    .group-area {
+        padding: 55px 90px;
+    }
+    .group-title{
+        margin-left: 0;
+    }
+    .groups {
+        justify-content: normal;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+    .group-teams {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .sponsor-title {
+        margin-bottom: 15px;
+    }
+    .sponsorship {
+        padding: 40px 90px;
+    }
+    .sponsor-content {
+         padding: 0;
+    }
+
+    footer {
+        
+    }
 }
