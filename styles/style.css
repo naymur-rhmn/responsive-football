@@ -217,3 +217,105 @@ footer{
     color: #000000;
     font-size: 18px;
 }
+
+
+/*========================================
+Responsive styles
+==========================================*/
+/* Mobail device styles */
+@media screen and (max-width: 767px){
+    .main-banner {
+        padding: 46px 15px 62px 15px;
+        flex-direction: column;
+        align-items: unset;
+    }
+    .banner-content h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner-img img {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+        padding: 47px 15px 0;
+    }
+
+    .highlights {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 15px 10px;
+    }
+    .highlight-content {
+        margin-right: 0;
+    }
+    .highlight-content h2{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+    .highlight-content h2:nth-child(2){
+        margin-bottom: 8px;
+    }
+    .highlight-img img {
+        margin-top: 29px;
+    }
+
+    .group-area {
+        padding: 15px;
+    }
+    .group-title{
+        margin: 30px 0;
+        font-size: 28px;
+    }
+    .groups{
+        display: block;
+    }
+    .group-no {
+        font-size: 24px;
+    }
+    .single-group-box {
+        margin-bottom: 25px;
+        box-shadow: 0px 0px 19px #f1f3fb;
+    }
+    .group-teams {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sponsorship{
+        margin-top: 10px;
+        margin-bottom: 25px;
+        padding: 15px;
+    }
+    .sponsor-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .sponsor-content {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .single-sponsor img {
+        max-width: 75px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-logo img {
+        width: 290px;
+        height: 58px;
+    }
+    .social-icon {
+        margin: 5px 0;
+    }
+}
+
+/* Tablet device styles */
+@media screen and (main-width: 768px) and (max-width: 1023px){
+    
+}
